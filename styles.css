@@ -1,0 +1,139 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Reggae One', cursive;
+    font-size: 62.5%;;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100wh;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+.music_player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    flex-direction: column;
+    height: 55rem;
+    width: 35rem;
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.music_player #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.music_player #artist{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    color: #cccaca;
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+.img_box{
+    width: 25rem;
+    height: 25rem;
+    cursor: none;
+    margin: 1rem;
+}
+#img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+.progressbar_container{
+    width: 100%;
+}
+.progress_div{
+    width: 100%;
+    height: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07) , 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07),  0 32px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 4rem;
+    position: relative;
+    margin: 0.8rem;
+    margin-left: 0rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #171717;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07) , 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07),  0 32px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 4rem;
+}
+.progress_duration{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.music_btn{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+.music_player .fas{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.fa-forward, .fa-backward{
+    color: #111;
+}
+.fa-play{
+    color: #f6f6f6;
+    background-color: #111;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.4rem; 
+}
+.fas:hover{
+    color: grey;
+}
+.fa-play:hover{
+    color: #111;
+    background-color: #f6f6f6;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+.anime{
+    animation: anime 3s linear infinite;
+}
+@keyframes anime {
+   from{transform: rotate(0deg);}
+   to{ transform: rotate(180deg);} 
+}
